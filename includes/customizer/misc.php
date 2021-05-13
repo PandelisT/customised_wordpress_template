@@ -28,7 +28,7 @@ function ju_misc_customizer_section( $wp_customize ){
     ]);
 
     $wp_customize->add_setting( 'ju_popular_posts_widget_title', [
-        'default'       =>  'Breaking News'
+        'default'       =>  'Popular Posts'
     ]);
 
     $wp_customize->add_setting( 'ju_read_more_color', [
@@ -42,7 +42,7 @@ function ju_misc_customizer_section( $wp_customize ){
     $wp_customize->add_section( 'ju_misc_section', [
         'title'         =>  __( 'Udemy Misc Settings', 'udemy' ),
         'priority'      =>  30,
-        // 'panel'         =>  'udemy'
+        'panel'         =>  'udemy'
     ]);
 
     $wp_customize->add_control(new WP_Customize_Control(
